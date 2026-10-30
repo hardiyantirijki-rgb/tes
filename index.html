@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Web Tunggal</title>
+    <!-- Memuat Tailwind CSS untuk styling modern -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Navigasi / Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <span class="bg-blue-600 text-white font-bold px-3 py-1.5 rounded-lg text-lg">HW</span>
+                <span class="font-bold text-xl tracking-tight text-slate-900">WebSatu</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#beranda" class="hover:text-blue-600 transition">Beranda</a>
+                <a href="#fitur" class="hover:text-blue-600 transition">Fitur</a>
+                <a href="#tentang" class="hover:text-blue-600 transition">Tentang</a>
+                <a href="#kontak" class="hover:text-blue-600 transition">Kontak</a>
+            </nav>
+            <div>
+                <button onclick="showAlert()" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition shadow-sm">
+                    Mulai Sekarang
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bagian Utama / Hero Section -->
+    <section id="beranda" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 flex flex-col items-center text-center">
+        <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-4">
+            Selamat Datang
+        </span>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight max-w-3xl mb-6">
+            Solusi Digital Modern dalam <span class="text-blue-600">Satu Halaman</span>
+        </h1>
+        <p class="text-lg sm:text-xl text-slate-600 max-w-2xl mb-8">
+            Bangun kehadiran web Anda dengan cepat menggunakan desain bersih, responsif, dan performa tinggi tanpa kerumitan banyak file.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+            <a href="#fitur" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg shadow transition">
+                Pelajari Fitur
+            </a>
+            <a href="#kontak" class="bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 font-medium px-6 py-3 rounded-lg transition">
+                Hubungi Kami
+            </a>
+        </div>
+    </section>
+
+    <!-- Bagian Fitur -->
+    <section id="fitur" class="bg-white py-20 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Fitur Unggulan</h2>
+                <p class="text-slate-600">Dirancang khusus untuk memberikan pengalaman terbaik dan efisiensi maksimal bagi pengguna.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Kartu Fitur 1 -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold text-xl mb-4">⚡</div>
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">Super Cepat</h3>
+                    <p class="text-slate-600 text-sm">Dibangun dengan kode minimalis tanpa ketergantungan file eksternal yang memberatkan pemuatan halaman.</p>
+                </div>
+                <!-- Kartu Fitur 2 -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold text-xl mb-4">📱</div>
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">Responsif Penuh</h3>
+                    <p class="text-slate-600 text-sm">Tampil sempurna di berbagai perangkat, mulai dari layar desktop besar hingga ponsel cerdas Anda.</p>
+                </div>
+                <!-- Kartu Fitur 3 -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold text-xl mb-4">🛡️</div>
+                    <h3 class="text-xl font-semibold text-slate-900 mb-2">Aman & Handal</h3>
+                    <p class="text-slate-600 text-sm">Struktur standar industri yang mudah dipelihara dan dikustomisasi sesuai kebutuhan Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Tentang -->
+    <section id="tentang" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-slate-900 mb-6">Tentang Proyek Ini</h2>
+                <p class="text-slate-600 mb-4">
+                    Halaman tunggal atau *Single-Page Application* ini dirancang agar efisien, mudah dimengerti, dan langsung dapat digunakan untuk berbagai keperluan seperti portofolio, landing page, atau profil singkat.
+                </p>
+                <p class="text-slate-600 mb-6">
+                    Semua elemen dikemas rapi dalam satu file kode tunggal sehingga sangat praktis untuk diunggah dan dijalankan di server manapun.
+                </p>
+                <ul class="space-y-3 text-slate-700 font-medium">
+                    <li class="flex items-center"><span class="text-blue-600 mr-2">✓</span> Desain bersih berbasis Tailwind CSS</li>
+                    <li class="flex items-center"><span class="text-blue-600 mr-2">✓</span> Navigasi mulus (Smooth Scrolling)</li>
+                    <li class="flex items-center"><span class="text-blue-600 mr-2">✓</span> Interaksi JavaScript ringan</li>
+                </ul>
+            </div>
+            <div class="bg-blue-600 rounded-3xl p-8 text-white shadow-xl flex flex-col justify-center">
+                <h3 class="text-2xl font-bold mb-4">Siap untuk Memulai?</h3>
+                <p class="mb-6 text-blue-100">Ubah kode ini sesuai kebutuhan Anda, tambahkan warna atau bagian baru dengan mudah.</p>
+                <button onclick="showAlert()" class="bg-white text-blue-600 font-semibold py-3 px-6 rounded-xl hover:bg-blue-50 transition shadow">
+                    Klik Interaksi
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Kontak -->
+    <section id="kontak" class="bg-slate-900 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Hubungi Kami</h2>
+            <p class="text-slate-400 max-w-xl mx-auto mb-8">Punya pertanyaan atau ingin berdiskusi lebih lanjut? Jangan ragu untuk mengirimkan pesan.</p>
+            <form onsubmit="handleForm(event)" class="max-w-md mx-auto flex flex-col gap-4">
+                <input type="email" placeholder="Masukkan alamat email Anda..." required class="px-4 py-3 rounded-lg bg-slate-800 border border-slate-700 text-white placeholder-slate-400 focus:outline-none focus:border-blue-500">
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 rounded-lg transition">
+                    Kirim Pesan
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-500 py-8 text-center text-sm border-t border-slate-800">
+        <p>© 2026 WebSatu. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <!-- Skrip JavaScript Sederhana -->
+    <script>
+        function showAlert() {
+            alert("Terima kasih telah mencoba tombol interaktif ini!");
+        }
+
+        function handleForm(event) {
+            event.preventDefault();
+            alert("Terima kasih! Pesan Anda telah berhasil disimulasikan untuk dikirim.");
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
